@@ -1,0 +1,157 @@
+.adminwhole {
+  display: flex;
+  background-color: rgb(233, 233, 233);
+  // background-color: rgb(141, 138, 153);
+  //background-color: rgb(233, 233, 233);
+  height: 100vh;
+
+  hr {
+    color: rgb(255, 255, 255);
+  }
+
+  .left {
+    flex: 1;
+    background-color: rgba(182, 182, 192, 0.664);
+    height: 100vh;
+    .top {
+      height: 180px;
+      //background-color: rgb(47, 14, 165);
+    }
+    .logo {
+      width: 100%;
+      margin-top: -30px;
+    }
+
+    .center {
+      padding-left: 10px;
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      li {
+        display: flex;
+        align-items: center;
+        padding: 30px;
+        cursor: pointer;
+
+        &:hover {
+          border: #fff;
+          background-color: rgba(180, 172, 97, 0.76);
+        }
+        .link {
+          text-decoration: none;
+          color: #2e3190;
+          //font-size: 30px;
+          &:hover {
+            color: rgb(27, 32, 34);
+          }
+        }
+
+        .icon {
+          font-size: 30px;
+        }
+        span {
+          font-size: 13px;
+          font-weight: 900;
+          margin-left: 10px;
+          color: #2e3190;
+        }
+      }
+    }
+  }
+  .right {
+    flex: 4;
+
+    .nav {
+      padding: 15px;
+      display: flex;
+      justify-content: flex-end;
+
+      p {
+        margin-right: 10px;
+        margin-left: 10px;
+        padding-top: 10px;
+      }
+      .out_in {
+        background-color: rgb(0, 81, 255);
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        position: relative;
+        cursor: pointer;
+        color: rgb(255, 255, 255);
+        font-weight: 400;
+        border-radius: 15px;
+        &:hover {
+          background-color: rgb(26, 170, 189);
+        }
+      }
+    }
+
+    h4 {
+      // margin-top: 20px;
+      padding: 43.5px;
+      background-color: #fff;
+    }
+
+    .adminbutton {
+      margin-top: 100px;
+      display: flex;
+      padding-bottom: 40px;
+      gap: 0px;
+      background-color: #fff;
+      width: 90%;
+      margin-left: 5%;
+
+      .buttonright {
+        flex: 1;
+        width: 60%;
+        margin-left: 10%;
+        padding-top: 40px;
+        border: 10px rgb(255, 2, 2);
+
+        Button {
+          height: 80px;
+          padding-right: 20%;
+          padding-left: 20%;
+          justify-content: center;
+        }
+      }
+      .buttonleft {
+        padding-top: 40px;
+        flex: 1;
+        //margin-right: 10%;
+        width: 60%;
+
+        Button {
+          height: 80px;
+          padding-right: 20%;
+          padding-left: 20%;
+          justify-content: center;
+        }
+      }
+    }
+    .button_user {
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      width: 80px;
+      height: 35px;
+      background-color: rgb(0, 140, 255);
+      border-radius: 15px;
+      text-align: center;
+      font-weight: bold;
+      padding-top: 5px;
+      margin-top: 4px;
+
+      &:hover {
+        background-color: rgb(43, 24, 218);
+      }
+    }
+  }
+}
